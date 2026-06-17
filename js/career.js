@@ -238,34 +238,10 @@ if(resumeUpload){
 
 }
 
-const reveals = document.querySelectorAll(
-    ".reveal-up, .reveal-left, .reveal-right, .reveal-scale"
-);
+window.addEventListener("load", () => {
+    document.body.style.overflow = "hidden";
 
-const revealObserver = new IntersectionObserver(
-
-(entries)=>{
-
-    entries.forEach(entry=>{
-
-        if(entry.isIntersecting){
-
-            entry.target.classList.add(
-                "reveal-active"
-            );
-
-        }
-
+    requestAnimationFrame(() => {
+        document.body.style.overflow = "";
     });
-
-},
-
-{
-    threshold:0.15
-}
-
-);
-
-reveals.forEach(el=>{
-    revealObserver.observe(el);
 });

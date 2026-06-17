@@ -728,7 +728,7 @@ RESPONSIVE
 }
 /* Initial Hidden State */
 
-.reveal-up{
+/*.reveal-up{
     opacity:0;
     transform:translateY(80px);
     transition:
@@ -763,7 +763,10 @@ RESPONSIVE
 
 /* Active State */
 
-.reveal-active{
+/*.reveal-active{
     opacity:1;
     transform:none;
 }
+/* {
+    outline: 1px solid red;
+}*/

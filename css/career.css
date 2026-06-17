@@ -1,0 +1,642 @@
+/* ==========================================
+CAREER PAGE
+PORTFOLIX ENTREPRISE
+========================================== */
+
+:root{
+--career-red:#dc3545;
+--career-dark:#050505;
+--career-dark-2:#101010;
+--career-border:rgba(255,255,255,.08);
+--career-text:#ffffff;
+--career-muted:#bdbdbd;
+}
+
+/* ==========================================
+GLOBAL
+========================================== */
+
+body{
+overflow-x:hidden;
+}
+
+section{
+position:relative;
+}
+
+.section-heading{
+margin-bottom:70px;
+}
+
+.section-heading span{
+color:var(--career-red);
+text-transform:uppercase;
+letter-spacing:3px;
+font-size:14px;
+font-weight:600;
+}
+
+.section-heading h2{
+color:#fff;
+font-size:56px;
+font-weight:800;
+margin-top:12px;
+line-height:1.1;
+}
+
+.btn-career-primary{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+
+ 
+padding:16px 38px;
+
+border-radius:999px;
+
+background:var(--career-red);
+color:#fff;
+
+font-weight:600;
+text-decoration:none;
+
+transition:.35s ease;
+ 
+
+}
+
+.btn-career-primary:hover{
+background:#ff4658;
+color:#fff;
+transform:translateY(-3px);
+}
+
+/* ==========================================
+HERO
+========================================== */
+
+.career-hero{
+min-height:100vh;
+
+ 
+display:flex;
+align-items:center;
+
+background:
+radial-gradient(circle at top left,
+rgba(220,53,69,.20),
+transparent 35%),
+
+radial-gradient(circle at bottom right,
+rgba(220,53,69,.15),
+transparent 35%),
+
+#050505;
+
+overflow:hidden;
+ 
+
+}
+
+.hero-bg-text{
+position:absolute;
+
+ 
+top:50%;
+left:50%;
+
+transform:translate(-50%,-50%);
+
+font-size:16vw;
+font-weight:900;
+
+color:rgba(255,255,255,.03);
+
+white-space:nowrap;
+
+user-select:none;
+ 
+
+}
+
+.career-label{
+display:inline-block;
+
+ 
+color:var(--career-red);
+
+letter-spacing:5px;
+
+font-size:15px;
+font-weight:600;
+
+margin-bottom:25px;
+ 
+
+}
+
+.career-title{
+color:#fff;
+
+ 
+font-size:90px;
+font-weight:900;
+
+line-height:1;
+margin-bottom:30px;
+ 
+
+}
+
+.career-title span{
+color:var(--career-red);
+}
+
+.career-subtitle{
+max-width:700px;
+
+ 
+margin:auto;
+
+color:var(--career-muted);
+
+font-size:20px;
+line-height:1.8;
+
+margin-bottom:45px;
+ 
+
+}
+
+.gradient-orb{
+position:absolute;
+
+ 
+border-radius:50%;
+
+filter:blur(90px);
+ 
+
+}
+
+.orb-1{
+width:300px;
+height:300px;
+
+ 
+background:#dc3545;
+
+top:10%;
+left:-100px;
+
+opacity:.25;
+ 
+
+}
+
+.orb-2{
+width:400px;
+height:400px;
+
+ 
+background:#dc3545;
+
+bottom:-120px;
+right:-120px;
+
+opacity:.18;
+ 
+
+}
+
+/* ==========================================
+WHY PORTFOLIX
+========================================== */
+
+.why-portfolix{
+padding:120px 0;
+background:#0d0d0d;
+}
+
+.why-card{
+background:rgba(255,255,255,.03);
+
+ 
+border:1px solid var(--career-border);
+
+padding:40px;
+
+border-radius:24px;
+
+height:100%;
+
+transition:.4s ease;
+ 
+
+}
+
+.why-card:hover{
+transform:translateY(-10px);
+
+ 
+border-color:rgba(220,53,69,.5);
+
+box-shadow:
+0 20px 50px rgba(220,53,69,.15);
+ 
+
+}
+
+.why-number{
+color:var(--career-red);
+
+ 
+font-size:42px;
+font-weight:800;
+
+margin-bottom:20px;
+ 
+
+}
+
+.why-card h4{
+color:#fff;
+font-size:24px;
+margin-bottom:15px;
+}
+
+.why-card p{
+color:var(--career-muted);
+line-height:1.8;
+}
+
+/* ==========================================
+JOBS
+========================================== */
+
+.career-openings{
+padding:130px 0;
+background:#050505;
+}
+
+.job-card{
+background:
+rgba(255,255,255,.03);
+
+ 
+backdrop-filter:blur(18px);
+
+border:1px solid var(--career-border);
+
+border-radius:30px;
+
+padding:40px;
+
+height:100%;
+
+transition:.4s ease;
+ 
+
+}
+
+.job-card:hover{
+transform:translateY(-12px);
+
+ 
+border-color:
+rgba(220,53,69,.5);
+ 
+
+}
+
+.job-type{
+display:inline-block;
+
+ 
+padding:8px 16px;
+
+border-radius:999px;
+
+background:
+rgba(220,53,69,.15);
+
+color:var(--career-red);
+
+font-size:13px;
+font-weight:600;
+
+margin-bottom:25px;
+ 
+
+}
+
+.job-card h3{
+color:#fff;
+
+ 
+font-size:30px;
+font-weight:700;
+
+margin-bottom:18px;
+ 
+
+}
+
+.job-card p{
+color:var(--career-muted);
+
+ 
+line-height:1.8;
+ 
+
+}
+
+.job-meta{
+color:#8e8e8e;
+
+ 
+margin-top:25px;
+margin-bottom:30px;
+ 
+
+}
+
+.apply-btn{
+color:var(--career-red);
+
+ 
+text-decoration:none;
+
+font-weight:600;
+ 
+
+}
+
+.apply-btn:hover
+
+/* ==========================================
+CULTURE
+========================================== */
+
+.culture-section{
+padding:130px 0;
+background:#090909;
+}
+
+.culture-image img{
+border-radius:30px;
+}
+
+.culture-tag{
+color:var(--career-red);
+
+ 
+letter-spacing:3px;
+
+display:block;
+
+margin-bottom:20px;
+ 
+
+}
+
+.culture-section h2{
+color:#fff;
+
+ 
+font-size:68px;
+font-weight:900;
+
+line-height:1.05;
+
+margin-bottom:25px;
+ 
+
+}
+
+.culture-section p{
+color:var(--career-muted);
+
+ 
+font-size:18px;
+line-height:1.9;
+ 
+
+}
+
+/* ==========================================
+TIMELINE
+========================================== */
+
+.hiring-process{
+padding:130px 0;
+background:#050505;
+}
+
+.timeline{
+display:flex;
+
+ 
+justify-content:space-between;
+
+position:relative;
+ 
+
+}
+
+.timeline::before{
+content:"";
+
+ 
+position:absolute;
+
+top:35px;
+left:5%;
+
+width:90%;
+height:2px;
+
+background:
+rgba(255,255,255,.12);
+ 
+
+}
+
+.timeline-item{
+text-align:center;
+position:relative;
+z-index:2;
+}
+
+.step{
+width:70px;
+height:70px;
+
+ 
+margin:auto;
+
+border-radius:50%;
+
+background:var(--career-red);
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+color:#fff;
+
+font-weight:700;
+
+margin-bottom:20px;
+ 
+
+}
+
+.timeline-item h5{
+color:#fff;
+}
+
+/* ==========================================
+FORM
+========================================== */
+
+.career-form-section{
+padding:130px 0;
+background:#090909;
+}
+
+.form-wrapper{
+max-width:900px;
+margin:auto;
+}
+
+.career-form-section .form-control{
+background:
+rgba(255,255,255,.03);
+
+ 
+border:
+1px solid rgba(255,255,255,.08);
+
+color:#fff;
+
+min-height:60px;
+
+border-radius:16px;
+ 
+
+}
+
+.career-form-section textarea.form-control{
+min-height:180px;
+}
+
+.career-form-section .form-control:focus{
+box-shadow:none;
+
+ 
+border-color:var(--career-red);
+
+background:
+rgba(255,255,255,.05);
+ 
+
+}
+
+/* ==========================================
+CTA
+========================================== */
+
+.career-cta{
+padding:140px 0;
+
+ 
+background:#050505;
+
+border-top:
+1px solid rgba(255,255,255,.05);
+ 
+
+}
+
+.career-cta h2{
+color:#fff;
+
+ 
+font-size:72px;
+font-weight:900;
+
+max-width:900px;
+
+margin:auto auto 30px;
+ 
+
+}
+
+.career-cta p{
+color:var(--career-red);
+
+ 
+font-size:24px;
+
+margin-bottom:35px;
+ 
+
+}
+
+/* ==========================================
+RESPONSIVE
+========================================== */
+
+@media(max-width:991px){
+
+ 
+.career-title{
+    font-size:58px;
+}
+
+.culture-section h2{
+    font-size:48px;
+}
+
+.career-cta h2{
+    font-size:48px;
+}
+
+.timeline{
+    flex-direction:column;
+    gap:40px;
+}
+
+.timeline::before{
+    display:none;
+}
+ 
+
+}
+
+@media(max-width:768px){
+
+ 
+.career-title{
+    font-size:42px;
+}
+
+.career-subtitle{
+    font-size:17px;
+}
+
+.section-heading h2{
+    font-size:38px;
+}
+
+.culture-section h2{
+    font-size:38px;
+}
+
+.career-cta h2{
+    font-size:36px;
+}
+ 
+
+}

@@ -522,6 +522,20 @@ background:#090909;
 max-width:900px;
 margin:auto;
 }
+@media(max-width:768px){
+
+    .form-wrapper{
+        padding:35px 20px;
+    }
+
+}
+@media(max-width:768px){
+
+    textarea.form-control{
+        min-height:140px !important;
+    }
+
+}
 
 .career-form-section .form-control{
 background:

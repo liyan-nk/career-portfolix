@@ -214,3 +214,26 @@ orb2.style.transform =
   
 
 });
+const resumeUpload =
+document.getElementById("resumeUpload");
+
+if(resumeUpload){
+
+    resumeUpload.addEventListener(
+        "change",
+        function(){
+
+            const fileName =
+            document.getElementById("fileName");
+
+            if(this.files.length){
+
+                fileName.textContent =
+                this.files[0].name;
+
+            }
+
+        }
+    );
+
+}

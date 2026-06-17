@@ -63,7 +63,7 @@ line-height:1.1;
         #ff4b5f
     );
 
-    color:#fff;
+    color:#fff !important;
     font-weight:700;
     font-size:16px;
 
@@ -81,7 +81,7 @@ line-height:1.1;
     box-shadow:
     0 18px 45px rgba(220,53,69,.45);
 
-    color:#fff;
+    color:#fff !important;
 }
 
 /* ==========================================
@@ -693,6 +693,8 @@ RESPONSIVE
 
     padding:0 25px;
 
+    margin-bottom:22px;
+
     color:#bdbdbd;
 
     cursor:pointer;
@@ -713,4 +715,55 @@ RESPONSIVE
 
 #fileName{
     font-weight:500;
+}
+.career-form-section select.form-control{
+    background:#111 !important;
+    color:#fff !important;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.career-form-section select.form-control option{
+    background:#111;
+    color:#fff;
+}
+/* Initial Hidden State */
+
+.reveal-up{
+    opacity:0;
+    transform:translateY(80px);
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.reveal-left{
+    opacity:0;
+    transform:translateX(-80px);
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.reveal-right{
+    opacity:0;
+    transform:translateX(80px);
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.reveal-scale{
+    opacity:0;
+    transform:scale(.92);
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+
+/* Active State */
+
+.reveal-active{
+    opacity:1;
+    transform:none;
 }
